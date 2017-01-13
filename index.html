@@ -1,23 +1,28 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+<head>
+	<title>729 Studio</title>
+	<meta charset="utf-8">
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
+	<header>
+	<div id="hdr">
+	<h1>729 Studio</h1>
+	</div>
+	<div id="topmenu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="artists.html">Artists</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</div>
+	</header>
+	
+	
+	
+</body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>
