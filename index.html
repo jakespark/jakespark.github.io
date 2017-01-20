@@ -173,18 +173,18 @@ body {font-size:16px;}
     <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Do you want us to record your band? Fill out the form and describe your act :) We love meeting new people!</p>
-    <form action="form.asp" target="_blank">
+    <form action="formhandler.php" target="_blank" method="post">
       <div class="w3-group">
         <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
+        <input class="w3-input w3-border" type="text" name="name" required />
       </div>
       <div class="w3-group">
         <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
+        <input class="w3-input w3-border" type="text" name="email" required />
       </div>
       <div class="w3-group">
         <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
+        <input class="w3-input w3-border" type="text" name="message" required />
       </div>
       <button type="submit" class="w3-btn-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
     </form>  
